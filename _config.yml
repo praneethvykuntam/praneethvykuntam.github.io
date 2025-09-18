@@ -1,0 +1,59 @@
+# GitHub Pages Configuration
+title: Praneeth - Portfolio
+description: AI Engineer & Data Scientist Portfolio
+author: Praneeth Vykuntam
+email: praneeth@example.com
+
+# GitHub Pages settings
+baseurl: ""
+url: "https://praneeth.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - LICENSE
+  - .gitignore
+
+# Include files
+include:
+  - _redirects
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# SEO
+description: "AI Engineer & Data Scientist specializing in machine learning, computer vision, and data analytics. View my portfolio of projects and professional experience."
+keywords: "AI Engineer, Data Scientist, Machine Learning, Computer Vision, Python, Portfolio"
+
