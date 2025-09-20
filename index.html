@@ -3,423 +3,266 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Praneeth Vykuntam - Data Professional</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Praneeth Vykuntam - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
-<body class="light-theme" data-theme="light">
-    <!-- Progress Bar -->
-    <div class="progress-bar"></div>
-    
-    <!-- Header -->
-    <header class="header">
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <div class="header-content">
-                <h1 class="logo">Praneeth Vykuntam</h1>
-                <button class="theme-toggle" id="themeToggle">
-                    <i class="fas fa-moon" id="themeIcon"></i>
-                </button>
+            <a class="navbar-brand" href="#home">Praneeth Vykuntam</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </header>
+    </nav>
 
-    <!-- Main Layout -->
-    <div class="main-layout">
-        <!-- Sidebar Navigation -->
-        <nav class="sidebar">
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link active" data-section="home">
-                        <i class="fas fa-home"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link" data-section="about">
-                        <i class="fas fa-user"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link" data-section="projects">
-                        <i class="fas fa-folder"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link" data-section="skills">
-                        <i class="fas fa-cog"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link" data-section="contact">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-
-        <!-- Main Content -->
-        <main class="main-content">
-            <!-- Home Section -->
-            <section id="home" class="section active">
-                <div class="container">
+    <!-- Home Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape shape-5"></div>
+                <div class="shape shape-6"></div>
+            </div>
+            <div class="gradient-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-profile">
+                        <img src="profile-picture.jpg" alt="Praneeth Vykuntam" class="profile-image">
+                    </div>
+                </div>
+                <div class="col-lg-6">
                     <div class="hero-content">
-                        <div class="hero-text">
-                            <h1 class="hero-title">Data Professional</h1>
-                            <p class="hero-subtitle">Turning raw data into business impact</p>
-                            <p class="hero-description">
-                                I specialize in building end-to-end machine learning solutions that solve real-world problems. 
-                                With experience across data analysis, business analysis, and data engineering, I bridge the gap 
-                                between technical depth and business value.
-                            </p>
-                            <div class="hero-actions">
-                                <a href="#about" class="btn btn-primary">Learn More</a>
-                                <a href="#projects" class="btn btn-outline">View Projects</a>
-                            </div>
-                        </div>
-                        <div class="hero-visual">
-                            <div class="geometric-shape">
-                                <div class="shape-1"></div>
-                                <div class="shape-2"></div>
-                                <div class="shape-3"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- About Section -->
-            <section id="about" class="section">
-                <div class="container">
-                    <div class="section-header">
-                        <h2 class="section-title">ABOUT</h2>
-                        <div class="section-line"></div>
-                    </div>
-                    <div class="about-content">
-                        <div class="about-visual">
-                            <div class="geometric-shape">
-                                <div class="shape-1"></div>
-                                <div class="shape-2"></div>
-                                <div class="shape-3"></div>
-                            </div>
-                        </div>
-                        <div class="about-text">
-                            <p class="about-description">
-                                Experienced data professional with a passion for transforming complex data into actionable business insights. 
-                                I specialize in demand forecasting, predictive modeling, and building machine learning pipelines that drive 
-                                strategic decision-making.
-                            </p>
-                            <p class="about-description">
-                                My expertise spans Python, R, SQL, and various ML frameworks, with a Master's degree in Data Analytics. 
-                                I focus on projects that combine technical excellence with business impact, from retail demand forecasting 
-                                to sentiment-driven policy prediction.
-                            </p>
-                            <div class="about-highlights">
-                                <div class="highlight-item">
-                                    <i class="fas fa-chart-line"></i>
-                                    <span>Demand Forecasting & Optimization</span>
-                                </div>
-                                <div class="highlight-item">
-                                    <i class="fas fa-brain"></i>
-                                    <span>Machine Learning Pipelines</span>
-                                </div>
-                                <div class="highlight-item">
-                                    <i class="fas fa-briefcase"></i>
-                                    <span>Business Strategy Integration</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Projects Section -->
-            <section id="projects" class="section">
-                <div class="container">
-                    <div class="section-header">
-                        <h2 class="section-title">PROJECTS</h2>
-                        <div class="section-line"></div>
-                    </div>
-                    <div class="projects-grid">
-                        <div class="project-card">
-                            <div class="project-header">
-                                <h3 class="project-title">Retail Demand Forecasting</h3>
-                                <div class="project-tags">
-                                    <span class="tag">Python</span>
-                                    <span class="tag">LightGBM</span>
-                                    <span class="tag">Pandas</span>
-                                </div>
-                            </div>
-                            <p class="project-description">
-                                End-to-end ML pipeline for forecasting weekly retail demand and estimating price elasticity. 
-                                Features data engineering, EDA, and price sensitivity analysis for inventory optimization.
-                            </p>
-                            <div class="project-links">
-                                <a href="#" class="project-link" data-bs-toggle="modal" data-bs-target="#retailModal">
-                                    <i class="fas fa-external-link-alt"></i>
-                                    View Details
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="project-card">
-                            <div class="project-header">
-                                <h3 class="project-title">Trade Policy Prediction</h3>
-                                <div class="project-tags">
-                                    <span class="tag">Python</span>
-                                    <span class="tag">NLP</span>
-                                    <span class="tag">Sentiment Analysis</span>
-                                </div>
-                            </div>
-                            <p class="project-description">
-                                Using NLP to understand policy signals and forecast economic impacts. Analyzes sentiment 
-                                in trade policy documents to predict market movements and policy outcomes.
-                            </p>
-                            <div class="project-links">
-                                <a href="https://github.com/praneethvykuntam" target="_blank" class="project-link">
-                                    <i class="fab fa-github"></i>
-                                    View on GitHub
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="project-card">
-                            <div class="project-header">
-                                <h3 class="project-title">Paper Insight Engine</h3>
-                                <div class="project-tags">
-                                    <span class="tag">Python</span>
-                                    <span class="tag">Transformers</span>
-                                    <span class="tag">Streamlit</span>
-                                </div>
-                            </div>
-                            <p class="project-description">
-                                AI-powered semantic search and summarization engine for academic literature. Helps researchers 
-                                quickly surface and understand relevant papers with intelligent search capabilities.
-                            </p>
-                            <div class="project-links">
-                                <a href="https://github.com/praneethvykuntam/paper_insight_engine" target="_blank" class="project-link">
-                                    <i class="fab fa-github"></i>
-                                    View on GitHub
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="project-card">
-                            <div class="project-header">
-                                <h3 class="project-title">Image Hashtag Generator</h3>
-                                <div class="project-tags">
-                                    <span class="tag">Python</span>
-                                    <span class="tag">AI</span>
-                                    <span class="tag">Computer Vision</span>
-                                </div>
-                            </div>
-                            <p class="project-description">
-                                AI tool that generates trending hashtags for images based on their content, using pre-trained 
-                                models for captioning and hashtag generation.
-                            </p>
-                            <div class="project-links">
-                                <a href="https://github.com/praneethvykuntam/image-hashtag-generator" target="_blank" class="project-link">
-                                    <i class="fab fa-github"></i>
-                                    View on GitHub
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Skills Section -->
-            <section id="skills" class="section">
-                <div class="container">
-                    <div class="section-header">
-                        <h2 class="section-title">TOOLS I WORK WITH</h2>
-                        <div class="section-line"></div>
-                    </div>
-                    <div class="skills-content">
-                        <div class="skills-categories">
-                            <div class="skill-category">
-                                <h3 class="category-title">Programming Languages</h3>
-                                <div class="skill-items">
-                                    <div class="skill-item">
-                                        <span class="skill-name">Python</span>
-                                        <div class="skill-bar">
-                                            <div class="skill-progress" style="width: 90%"></div>
-                                        </div>
-                                        <span class="skill-percentage">90%</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <span class="skill-name">R</span>
-                                        <div class="skill-bar">
-                                            <div class="skill-progress" style="width: 75%"></div>
-                                        </div>
-                                        <span class="skill-percentage">75%</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <span class="skill-name">SQL</span>
-                                        <div class="skill-bar">
-                                            <div class="skill-progress" style="width: 85%"></div>
-                                        </div>
-                                        <span class="skill-percentage">85%</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <span class="skill-name">C++</span>
-                                        <div class="skill-bar">
-                                            <div class="skill-progress" style="width: 60%"></div>
-                                        </div>
-                                        <span class="skill-percentage">60%</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skill-category">
-                                <h3 class="category-title">ML & Data Science</h3>
-                                <div class="skill-items">
-                                    <div class="skill-item">
-                                        <span class="skill-name">Pandas</span>
-                                        <div class="skill-bar">
-                                            <div class="skill-progress" style="width: 95%"></div>
-                                        </div>
-                                        <span class="skill-percentage">95%</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <span class="skill-name">Scikit-learn</span>
-                                        <div class="skill-bar">
-                                            <div class="skill-progress" style="width: 85%"></div>
-                                        </div>
-                                        <span class="skill-percentage">85%</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <span class="skill-name">TensorFlow</span>
-                                        <div class="skill-bar">
-                                            <div class="skill-progress" style="width: 70%"></div>
-                                        </div>
-                                        <span class="skill-percentage">70%</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <span class="skill-name">NumPy</span>
-                                        <div class="skill-bar">
-                                            <div class="skill-progress" style="width: 90%"></div>
-                                        </div>
-                                        <span class="skill-percentage">90%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Contact Section -->
-            <section id="contact" class="section">
-                <div class="container">
-                    <div class="section-header">
-                        <h2 class="section-title">CONTACT</h2>
-                        <div class="section-line"></div>
-                    </div>
-                    <div class="contact-content">
-                        <div class="contact-info">
-                            <div class="contact-item">
-                                <i class="fas fa-envelope"></i>
-                                <div>
-                                    <h4>Email</h4>
-                                    <a href="mailto:praneeth@example.com">praneeth@example.com</a>
-                                </div>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fab fa-linkedin"></i>
-                                <div>
-                                    <h4>LinkedIn</h4>
-                                    <a href="https://www.linkedin.com/in/praneeth-vykuntam/" target="_blank">linkedin.com/in/praneeth-vykuntam</a>
-                                </div>
-                            </div>
-                            <div class="contact-item">
+                        <h1 class="hero-title">Praneeth Vykuntam</h1>
+                        <p class="hero-subtitle">Business Analyst</p>
+                        <div class="hero-social">
+                            <a href="https://github.com/praneethvykuntam" target="_blank" class="social-link">
                                 <i class="fab fa-github"></i>
-                                <div>
-                                    <h4>GitHub</h4>
-                                    <a href="https://github.com/praneethvykuntam" target="_blank">github.com/praneethvykuntam</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="contact-message">
-                            <h3>Let's Connect</h3>
-                            <p>I'm always interested in discussing data science opportunities, 
-                            collaborative projects, or just having a conversation about the latest 
-                            in machine learning and business analytics.</p>
+                            </a>
+                            <a href="https://www.linkedin.com/in/praneeth-vykuntam/" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="mailto:praneethvykuntam2001@gmail.com" class="social-link">
+                                <i class="fas fa-envelope"></i>
+                            </a>
                         </div>
                     </div>
-                </div>
-            </section>
-        </main>
-    </div>
-
-    <!-- Retail Demand Forecasting Modal -->
-    <div class="modal fade" id="retailModal" tabindex="-1" aria-labelledby="retailModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="retailModalLabel">Retail Demand Forecasting & Price Elasticity</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="modal-section">
-                        <h2>Retail Demand Forecasting & Price Elasticity</h2>
-                        <p>End-to-end ML pipeline for forecasting weekly retail demand and estimating price elasticity. Features data engineering, EDA, model development with LightGBM/Random Forest, and price sensitivity analysis for inventory optimization and dynamic pricing strategies.</p>
-                        <p>For more information and documentation reference, visit <a href="#" target="_blank">GitHub Repository</a></p>
-                    </div>
-
-                    <div class="modal-section">
-                        <h3>Key Features</h3>
-                        <div class="modal-highlight">
-                            <div class="d-flex align-items-start">
-                                <i class="fas fa-chart-line"></i>
-                                <div>
-                                    <h5>Advanced ML Forecasting</h5>
-                                    <p class="mb-0">Leverage advanced ML models to accurately predict demand with MAE ≈ 2.0 and RMSE ≈ 2.5, giving you a competitive edge in inventory management.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-highlight">
-                            <div class="d-flex align-items-start">
-                                <i class="fas fa-dollar-sign"></i>
-                                <div>
-                                    <h5>Price Elasticity Analysis</h5>
-                                    <p class="mb-0">Navigate price elasticity analysis effortlessly, visualize demand patterns through interactive charts, and gain valuable insights to guide your pricing strategies.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-highlight">
-                            <div class="d-flex align-items-start">
-                                <i class="fas fa-warehouse"></i>
-                                <div>
-                                    <h5>Inventory Optimization</h5>
-                                    <p class="mb-0">Identify optimal inventory levels and pricing strategies automatically, reducing stockouts and overstocks while maximizing revenue potential.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="modal-section">
-                        <h3>Technology Stack</h3>
-                        <div>
-                            <span class="modal-badge">Python</span>
-                            <span class="modal-badge">LightGBM</span>
-                            <span class="modal-badge">Pandas</span>
-                            <span class="modal-badge">Scikit-learn</span>
-                            <span class="modal-badge">NumPy</span>
-                            <span class="modal-badge">Matplotlib</span>
-                            <span class="modal-badge">PyArrow</span>
-                            <span class="modal-badge">Seaborn</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <a href="#" class="modal-btn" target="_blank">View on GitHub</a>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title mb-5">About</h2>
+                    <p class="lead mb-4">
+                        Experienced data professional with a passion for transforming complex data into actionable business insights. 
+                        I specialize in demand forecasting, predictive modeling, and building machine learning pipelines that drive 
+                        strategic decision-making. My expertise spans Python, R, SQL, and various ML frameworks, with a Master's degree 
+                        in Data Analytics. I focus on projects that combine technical excellence with business impact, from retail demand 
+                        forecasting to sentiment-driven policy prediction.
+                    </p>
+                    <p class="lead">
+                        Proficient in AI-based frameworks, machine learning algorithms, clean code writing, and effective integration 
+                        and deployment practices, with a strong emphasis on business logic development and software optimization.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title mb-5">Tools I Work with</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3 class="mb-4">Programming Languages</h3>
+                            <div class="skill-item mb-3">
+                                <span class="skill-name">Python</span>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 90%"></div>
+                                </div>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-item mb-3">
+                                <span class="skill-name">R</span>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 75%"></div>
+                                </div>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-item mb-3">
+                                <span class="skill-name">SQL</span>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 85%"></div>
+                                </div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="mb-4">Data Science Tools</h3>
+                            <div class="skill-item mb-3">
+                                <span class="skill-name">Pandas</span>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 95%"></div>
+                                </div>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-item mb-3">
+                                <span class="skill-name">Numpy</span>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 90%"></div>
+                                </div>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-item mb-3">
+                                <span class="skill-name">Sci-kit Learn</span>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 85%"></div>
+                                </div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-item mb-3">
+                                <span class="skill-name">Tensorflow</span>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 70%"></div>
+                                </div>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Projects</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Retail Demand Forecasting</h5>
+                            <p class="card-text">End-to-end ML pipeline for forecasting weekly retail demand and estimating price elasticity. Features data engineering, EDA, and price sensitivity analysis for inventory optimization.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Trade Policy Prediction</h5>
+                            <p class="card-text">Using NLP to understand policy signals and forecast economic impacts. Analyzes sentiment in trade policy documents to predict market movements and policy outcomes.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card project-card">
+                        <img src="paper-insight-engine/cover.png" class="card-img-top" alt="Paper Insight Engine screenshot">
+                        <div class="card-body">
+                            <h5 class="card-title">Paper Insight Engine</h5>
+                            <p class="card-text">An AI-powered semantic search and summarization engine for academic literature (initially PubMed). Helps researchers quickly surface and understand relevant papers.</p>
+                            <a href="https://github.com/praneethvykuntam/paper_insight_engine" target="_blank" class="btn btn-primary">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Highlights Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Highlights</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p class="lead">Your highlights and achievements will be displayed here</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-dark text-white">
+        <div class="container">
+            <h2 class="section-title text-center mb-5 text-white">Contact</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <h5><i class="fas fa-envelope me-2"></i>Email:</h5>
+                            <p>praneethvykuntam2001@gmail.com</p>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <h5><i class="fab fa-github me-2"></i>Github:</h5>
+                            <p>https://github.com/praneethvykuntam/</p>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <h5><i class="fab fa-linkedin me-2"></i>Linkedin:</h5>
+                            <p>www.linkedin.com/in/praneeth-vykuntam/</p>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <h5><i class="fas fa-phone me-2"></i>Call:</h5>
+                            <p>+1 437-210-8998</p>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <h5>Download my Resume here</h5>
+                        <a href="resume.pdf" class="btn btn-primary btn-lg" target="_blank">Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <h5 class="mb-2">Praneeth Vykuntam</h5>
+            <p class="mb-2">Business Analyst</p>
+            <p class="mb-0">© Copyright <strong>Praneeth Vykuntam</strong>. All Rights Reserved</p>
+            <p class="mb-0">Designed by BootstrapMade</p>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
