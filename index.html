@@ -107,10 +107,10 @@
     <section class="py-5 bg-light">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
+                <div class="col-lg-10 mx-auto text-center">
                     <h2 class="section-title mb-5">Tools I Work with</h2>
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <h3 class="mb-4">Programming Languages</h3>
                             <div class="skill-item mb-3">
                                 <span class="skill-name">Python</span>
@@ -134,7 +134,7 @@
                                 <span class="skill-percentage">85%</span>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <h3 class="mb-4">Data Science Tools</h3>
                             <div class="skill-item mb-3">
                                 <span class="skill-name">Pandas</span>
@@ -165,6 +165,37 @@
                                 <span class="skill-percentage">70%</span>
                             </div>
                         </div>
+                        <div class="col-md-4">
+                            <h3 class="mb-4">Business Analysis Tools</h3>
+                            <div class="skill-item mb-3">
+                                <span class="skill-name">Excel</span>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 95%"></div>
+                                </div>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-item mb-3">
+                                <span class="skill-name">Power BI</span>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 85%"></div>
+                                </div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-item mb-3">
+                                <span class="skill-name">Tableau</span>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 80%"></div>
+                                </div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-item mb-3">
+                                <span class="skill-name">SAP</span>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 75%"></div>
+                                </div>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -181,7 +212,10 @@
                         <div class="card-body">
                             <h5 class="card-title">Retail Demand Forecasting</h5>
                             <p class="card-text">End-to-end ML pipeline for forecasting weekly retail demand and estimating price elasticity. Features data engineering, EDA, and price sensitivity analysis for inventory optimization.</p>
-                            <a href="#" class="btn btn-primary">Learn More</a>
+                            <div class="d-flex gap-2">
+                                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#retailModal">View More</button>
+                                <a href="https://github.com/praneethvykuntam/retail-demand-forecasting" target="_blank" class="btn btn-primary">View on GitHub</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -190,17 +224,34 @@
                         <div class="card-body">
                             <h5 class="card-title">Trade Policy Prediction</h5>
                             <p class="card-text">Using NLP to understand policy signals and forecast economic impacts. Analyzes sentiment in trade policy documents to predict market movements and policy outcomes.</p>
-                            <a href="#" class="btn btn-primary">Learn More</a>
+                            <div class="d-flex gap-2">
+                                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#tradeModal">View More</button>
+                                <a href="https://github.com/praneethvykuntam/trade-policy-prediction" target="_blank" class="btn btn-primary">View on GitHub</a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card project-card">
-                        <img src="paper-insight-engine/cover.png" class="card-img-top" alt="Paper Insight Engine screenshot">
                         <div class="card-body">
                             <h5 class="card-title">Paper Insight Engine</h5>
                             <p class="card-text">An AI-powered semantic search and summarization engine for academic literature (initially PubMed). Helps researchers quickly surface and understand relevant papers.</p>
-                            <a href="https://github.com/praneethvykuntam/paper_insight_engine" target="_blank" class="btn btn-primary">View on GitHub</a>
+                            <div class="d-flex gap-2">
+                                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#paperModal">View More</button>
+                                <a href="https://github.com/praneethvykuntam/paper_insight_engine" target="_blank" class="btn btn-primary">View on GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Climate Risk & Business Vulnerability Analyzer</h5>
+                            <p class="card-text">A comprehensive analytics platform that combines climate data, disaster records, and industry sector information to assess business vulnerability to climate events and provide actionable risk insights.</p>
+                            <div class="d-flex gap-2">
+                                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#climateModal">View More</button>
+                                <a href="https://github.com/praneethvykuntam/climateRisk-BusinessVulnerabilityAnalyzer" target="_blank" class="btn btn-primary">View on GitHub</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -214,8 +265,48 @@
         <div class="container">
             <h2 class="section-title text-center mb-5">Highlights</h2>
             <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <p class="lead">Your highlights and achievements will be displayed here</p>
+                <div class="col-lg-8 mx-auto">
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body text-center">
+                                    <div class="mb-3">
+                                        <i class="fas fa-certificate fa-3x text-primary"></i>
+                                    </div>
+                                    <h5 class="card-title">IBM Data Analyst Professional Certificate</h5>
+                                    <p class="card-text">Completed 9-course specialization covering data analytics fundamentals, Python programming, SQL databases, and data visualization. Equipped with hands-on experience in Excel, Python, Jupyter Notebooks, and Cognos Analytics.</p>
+                                    <div class="mb-3">
+                                        <span class="badge bg-primary me-2">Data Analytics</span>
+                                        <span class="badge bg-primary me-2">Python</span>
+                                        <span class="badge bg-primary me-2">SQL</span>
+                                        <span class="badge bg-primary me-2">Excel</span>
+                                    </div>
+                                    <small class="text-muted">Completed: January 20, 2023</small>
+                                    <div class="mt-3">
+                                        <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/X8EYCDUKFK2B" target="_blank" class="btn btn-outline-primary btn-sm">View Certificate</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body text-center">
+                                    <div class="mb-3">
+                                        <i class="fas fa-graduation-cap fa-3x text-primary"></i>
+                                    </div>
+                                    <h5 class="card-title">Master's in Management</h5>
+                                    <p class="card-text">Advanced degree focusing on strategic management, business analytics, and organizational leadership. Specialized coursework in data-driven decision making, business intelligence, and management consulting.</p>
+                                    <div class="mb-3">
+                                        <span class="badge bg-primary me-2">Strategic Management</span>
+                                        <span class="badge bg-primary me-2">Business Analytics</span>
+                                        <span class="badge bg-primary me-2">Leadership</span>
+                                        <span class="badge bg-primary me-2">Consulting</span>
+                                    </div>
+                                    <small class="text-muted">Graduated: 2023</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -263,6 +354,225 @@
             <p class="mb-0">Designed by BootstrapMade</p>
         </div>
     </footer>
+
+    <!-- Project Modals -->
+    <!-- Retail Demand Forecasting Modal -->
+    <div class="modal fade" id="retailModal" tabindex="-1" aria-labelledby="retailModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="retailModalLabel">Retail Demand Forecasting</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Essential Images Section -->
+                    <h6 class="mb-3">Essential Project Visualizations</h6>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="retail-demand-forecasting/portfolio_main_dashboard.png" class="img-fluid rounded mb-3" alt="Main Dashboard">
+                            <p class="text-center small text-muted">Main Forecasting Dashboard</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="retail-demand-forecasting/portfolio_results_summary.png" class="img-fluid rounded mb-3" alt="Results Summary">
+                            <p class="text-center small text-muted">Results Summary</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="retail-demand-forecasting/portfolio_architecture_diagram.png" class="img-fluid rounded mb-3" alt="Architecture Diagram">
+                            <p class="text-center small text-muted">System Architecture</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="retail-demand-forecasting/portfolio_correlation_analysis.png" class="img-fluid rounded mb-3" alt="Correlation Analysis">
+                            <p class="text-center small text-muted">Price Elasticity Analysis</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mx-auto">
+                            <img src="retail-demand-forecasting/portfolio_business_value.png" class="img-fluid rounded mb-3" alt="Business Value">
+                            <p class="text-center small text-muted">Business Value Impact</p>
+                        </div>
+                    </div>
+                    <h6>Project Overview</h6>
+                    <p>This project implements an end-to-end machine learning pipeline for retail demand forecasting with price elasticity analysis. The system processes historical sales data, applies advanced time series forecasting techniques, and provides insights into price sensitivity for inventory optimization.</p>
+                    
+                    <h6>Key Features</h6>
+                    <ul>
+                        <li>Time series forecasting using ARIMA and Prophet models</li>
+                        <li>Price elasticity analysis for demand sensitivity</li>
+                        <li>Interactive dashboard for visualization</li>
+                        <li>Error analysis and model validation</li>
+                        <li>Automated data preprocessing pipeline</li>
+                    </ul>
+                    
+                    <h6>Technologies Used</h6>
+                    <span class="badge bg-primary me-2">Python</span>
+                    <span class="badge bg-primary me-2">Pandas</span>
+                    <span class="badge bg-primary me-2">Scikit-learn</span>
+                    <span class="badge bg-primary me-2">Prophet</span>
+                    <span class="badge bg-primary me-2">Plotly</span>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://github.com/praneethvykuntam/retail-demand-forecasting" target="_blank" class="btn btn-primary">View on GitHub</a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trade Policy Prediction Modal -->
+    <div class="modal fade" id="tradeModal" tabindex="-1" aria-labelledby="tradeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tradeModalLabel">Trade Policy Prediction</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="trade-policy-prediction/sentiment-analysis.png" class="img-fluid rounded mb-3" alt="Sentiment Analysis">
+                        </div>
+                        <div class="col-md-6">
+                            <img src="trade-policy-prediction/policy-timeline.png" class="img-fluid rounded mb-3" alt="Policy Timeline">
+                        </div>
+                    </div>
+                    <h6>Project Overview</h6>
+                    <p>This project uses Natural Language Processing (NLP) to analyze trade policy documents and predict their economic impacts. The system processes policy texts, extracts sentiment and key themes, and forecasts market movements based on policy signals.</p>
+                    
+                    <h6>Key Features</h6>
+                    <ul>
+                        <li>Sentiment analysis of policy documents</li>
+                        <li>Economic impact prediction models</li>
+                        <li>Market movement forecasting</li>
+                        <li>Policy timeline visualization</li>
+                        <li>Text preprocessing and feature extraction</li>
+                    </ul>
+                    
+                    <h6>Technologies Used</h6>
+                    <span class="badge bg-primary me-2">Python</span>
+                    <span class="badge bg-primary me-2">NLTK</span>
+                    <span class="badge bg-primary me-2">Transformers</span>
+                    <span class="badge bg-primary me-2">TensorFlow</span>
+                    <span class="badge bg-primary me-2">Pandas</span>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://github.com/praneethvykuntam/trade-policy-prediction" target="_blank" class="btn btn-primary">View on GitHub</a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Paper Insight Engine Modal -->
+    <div class="modal fade" id="paperModal" tabindex="-1" aria-labelledby="paperModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="paperModalLabel">Paper Insight Engine</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="paper-insight-engine/search.png" class="img-fluid rounded mb-3" alt="Search Interface">
+                        </div>
+                        <div class="col-md-6">
+                            <img src="paper-insight-engine/results.png" class="img-fluid rounded mb-3" alt="Search Results">
+                        </div>
+                    </div>
+                    <h6>Project Overview</h6>
+                    <p>An AI-powered semantic search and summarization engine designed for academic literature, initially focused on PubMed. The system helps researchers quickly discover and understand relevant papers through advanced NLP techniques and semantic understanding.</p>
+                    
+                    <h6>Key Features</h6>
+                    <ul>
+                        <li>Semantic search across academic papers</li>
+                        <li>Automatic paper summarization</li>
+                        <li>Citation network analysis</li>
+                        <li>Topic modeling and clustering</li>
+                        <li>Interactive search interface</li>
+                    </ul>
+                    
+                    <h6>Technologies Used</h6>
+                    <span class="badge bg-primary me-2">Python</span>
+                    <span class="badge bg-primary me-2">Transformers</span>
+                    <span class="badge bg-primary me-2">Elasticsearch</span>
+                    <span class="badge bg-primary me-2">Streamlit</span>
+                    <span class="badge bg-primary me-2">Scikit-learn</span>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://github.com/praneethvykuntam/paper_insight_engine" target="_blank" class="btn btn-primary">View on GitHub</a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Climate Risk Analyzer Modal -->
+    <div class="modal fade" id="climateModal" tabindex="-1" aria-labelledby="climateModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="climateModalLabel">Climate Risk & Business Vulnerability Analyzer</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Essential Images Section -->
+                    <h6 class="mb-3">Essential Project Visualizations</h6>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="climate-risk-analyzer/portfolio_main_dashboard.png" class="img-fluid rounded mb-3" alt="Main Dashboard">
+                            <p class="text-center small text-muted">Main Risk Dashboard</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="climate-risk-analyzer/portfolio_results_summary.png" class="img-fluid rounded mb-3" alt="Results Summary">
+                            <p class="text-center small text-muted">Results Summary</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="climate-risk-analyzer/portfolio_architecture_diagram.png" class="img-fluid rounded mb-3" alt="Architecture Diagram">
+                            <p class="text-center small text-muted">System Architecture</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="climate-risk-analyzer/portfolio_correlation_analysis.png" class="img-fluid rounded mb-3" alt="Correlation Analysis">
+                            <p class="text-center small text-muted">Correlation Analysis</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mx-auto">
+                            <img src="climate-risk-analyzer/portfolio_business_value.png" class="img-fluid rounded mb-3" alt="Business Value">
+                            <p class="text-center small text-muted">Business Value Impact</p>
+                        </div>
+                    </div>
+                    <h6>Project Overview</h6>
+                    <p>A comprehensive analytics platform that combines climate data, disaster records, and industry sector information to assess business vulnerability to climate events. The system provides actionable risk insights for strategic planning and climate adaptation.</p>
+                    
+                    <h6>Key Features</h6>
+                    <ul>
+                        <li>Climate data integration from NASA POWER API</li>
+                        <li>Disaster database analysis (EM-DAT)</li>
+                        <li>Industry vulnerability assessment</li>
+                        <li>Risk hotspot identification</li>
+                        <li>Interactive risk dashboard</li>
+                        <li>Predictive modeling for climate risks</li>
+                    </ul>
+                    
+                    <h6>Technologies Used</h6>
+                    <span class="badge bg-primary me-2">Python</span>
+                    <span class="badge bg-primary me-2">Dash</span>
+                    <span class="badge bg-primary me-2">Pandas</span>
+                    <span class="badge bg-primary me-2">Scikit-learn</span>
+                    <span class="badge bg-primary me-2">Plotly</span>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://github.com/praneethvykuntam/climateRisk-BusinessVulnerabilityAnalyzer" target="_blank" class="btn btn-primary">View on GitHub</a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
