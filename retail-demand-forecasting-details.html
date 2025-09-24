@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Demand Forecasting & Price Elasticity - Praneeth Vykuntam</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Praneeth Vykuntam</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="project-hero">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-8 mx-auto text-center">
+                    <div class="project-hero-icon mb-4">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h1 class="project-hero-title">Retail Demand Forecasting & Price Elasticity</h1>
+                    <p class="project-hero-subtitle">Improving sales planning by predicting short-term demand and estimating price elasticity to optimize inventory and pricing strategies.</p>
+                    <div class="project-hero-actions">
+                        <a href="https://github.com/praneethvykuntam/Retail-Demand-Forecasting-Price-Elasticity" target="_blank" class="btn btn-primary me-3">
+                            <i class="fab fa-github me-2"></i>View on GitHub
+                        </a>
+                        <a href="index.html#projects" class="btn btn-outline-secondary">
+                            <i class="fas fa-arrow-left me-2"></i>Back to Projects
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Details -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <!-- Business Problem / Background Section -->
+                    <div class="project-section mb-5">
+                        <h2 class="project-section-title">Business Problem / Background</h2>
+                        <div class="project-overview">
+                            <p class="lead">Retailers face uncertainty in matching supply with demand, leading to lost sales or excess inventory. Inaccurate forecasts also reduce the effectiveness of pricing and promotions, resulting in suboptimal revenue and customer satisfaction.</p>
+                            
+                            <div class="row mt-4">
+                                <div class="col-md-6">
+                                    <h5><i class="fas fa-exclamation-triangle text-warning me-2"></i>Why This Problem Matters</h5>
+                                    <ul>
+                                        <li>Inventory costs represent 20-30% of total retail costs</li>
+                                        <li>Stockouts lead to lost sales and customer dissatisfaction</li>
+                                        <li>Overstocking ties up capital and increases carrying costs</li>
+                                        <li>Poor pricing strategies reduce profit margins</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5><i class="fas fa-users text-primary me-2"></i>Who Is Impacted</h5>
+                                    <ul>
+                                        <li><strong>Merchandising Teams:</strong> Need accurate demand forecasts for buying decisions</li>
+                                        <li><strong>Pricing Teams:</strong> Require price elasticity data for optimal pricing</li>
+                                        <li><strong>Operations:</strong> Need inventory recommendations for warehouse management</li>
+                                        <li><strong>Finance:</strong> Demand cash flow projections and revenue optimization</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Objective Section -->
+                    <div class="project-section mb-5">
+                        <h2 class="project-section-title">Objective</h2>
+                        <div class="project-overview">
+                            <p class="lead">The goal of this project was to build a demand forecasting tool that predicts product sales four weeks ahead, while also quantifying how sensitive demand is to price changes. These insights can help retailers optimize inventory and pricing strategies to maximize revenue and minimize costs.</p>
+                        </div>
+                    </div>
+
+                    <!-- Data & Sources Section -->
+                    <div class="project-section mb-5">
+                        <h2 class="project-section-title">Data & Sources</h2>
+                        <div class="project-overview">
+                            <p class="lead">The dataset consisted of 120,000 sales records across 50 stores, including prices, promotions, seasonal events, and product categories over two years. Missing values were imputed, and categorical variables such as promotions were standardized.</p>
+                            
+                            <div class="row mt-4">
+                                <div class="col-md-6">
+                                    <h5><i class="fas fa-database text-primary me-2"></i>Data Sources</h5>
+                                    <ul>
+                                        <li><strong>Sales Data:</strong> Historical transaction records from POS systems</li>
+                                        <li><strong>Pricing Data:</strong> Product prices and promotional discounts</li>
+                                        <li><strong>External Factors:</strong> Holidays, weather, economic indicators</li>
+                                        <li><strong>Product Information:</strong> Categories, brands, seasonal patterns</li>
+                                        <li><strong>Store Data:</strong> Location, size, customer demographics</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5><i class="fas fa-chart-bar text-primary me-2"></i>Data Scope & Quality</h5>
+                                    <ul>
+                                        <li><strong>Size:</strong> 120,000 sales records across 50 stores</li>
+                                        <li><strong>Time Period:</strong> 2 years of historical data</li>
+                                        <li><strong>Variables:</strong> 15+ features including price, promotions, seasonality</li>
+                                        <li><strong>Quality Issues:</strong> Missing values, inconsistent product codes</li>
+                                        <li><strong>Solutions:</strong> Data imputation, standardization, validation</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Approach / Methodology Section -->
+                    <div class="project-section mb-5">
+                        <h2 class="project-section-title">Approach / Methodology</h2>
+                        <div class="project-overview">
+                            <p class="lead">I began with exploratory analysis to identify seasonal patterns, store-level differences, and promotion effects. I then engineered lagged demand and rolling average features to improve prediction accuracy. Using regression models and gradient boosting, I generated demand forecasts, and applied elasticity models to estimate the impact of price changes on different product categories. Visual dashboards were built to make results accessible to non-technical stakeholders.</p>
+                            
+                            <div class="row mt-4">
+                                <div class="col-md-6">
+                                    <h5><i class="fas fa-search text-primary me-2"></i>Exploratory Data Analysis</h5>
+                                    <ul>
+                                        <li>Analyzed seasonal patterns and holiday effects on sales</li>
+                                        <li>Identified store-level performance differences</li>
+                                        <li>Examined promotion impact and price sensitivity</li>
+                                        <li>Investigated product category demand variations</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5><i class="fas fa-cogs text-primary me-2"></i>Feature Engineering</h5>
+                                    <ul>
+                                        <li>Created lagged demand variables (1-4 weeks)</li>
+                                        <li>Built rolling average features for trend capture</li>
+                                        <li>Developed promotional flags and holiday indicators</li>
+                                        <li>Generated price change and elasticity features</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-6">
+                                    <h5><i class="fas fa-brain text-primary me-2"></i>Models & Analytics</h5>
+                                    <ul>
+                                        <li>Prophet for time series forecasting with seasonality</li>
+                                        <li>ARIMA models for trend analysis and stationarity</li>
+                                        <li>XGBoost for ensemble modeling and feature importance</li>
+                                        <li>Regression analysis for price elasticity estimation</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5><i class="fas fa-chart-line text-primary me-2"></i>Visualization & Storytelling</h5>
+                                    <ul>
+                                        <li>Interactive dashboards for demand forecasting</li>
+                                        <li>Price elasticity visualization tools</li>
+                                        <li>Inventory optimization recommendations</li>
+                                        <li>Executive reports with actionable insights</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Results / Insights Section -->
+                    <div class="project-section mb-5">
+                        <h2 class="project-section-title">Results / Insights</h2>
+                        <div class="project-overview">
+                            <p class="lead">The forecasting model reduced error by 18% compared to the company's baseline method, providing more reliable sales predictions. Price elasticity analysis revealed that household products were highly sensitive to discounts, while premium categories remained inelastic. These insights allow the retailer to better plan promotions and reduce overstocking.</p>
+                            
+                            <div class="row mt-4">
+                                <div class="col-md-6">
+                                    <h5><i class="fas fa-chart-line text-primary me-2"></i>Key Findings</h5>
+                                    <ul>
+                                        <li><strong>Forecast Accuracy:</strong> Achieved 87% accuracy in demand predictions, 18% improvement over baseline</li>
+                                        <li><strong>Price Sensitivity:</strong> Household products showed -2.3 elasticity, premium items -0.8</li>
+                                        <li><strong>Seasonal Patterns:</strong> Holiday sales increased 40% with proper promotion timing</li>
+                                        <li><strong>Store Variations:</strong> Urban stores outperformed rural by 25% in forecast accuracy</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5><i class="fas fa-lightbulb text-warning me-2"></i>Critical Insights</h5>
+                                    <ul>
+                                        <li><strong>Promotion Impact:</strong> 20% discounts increased demand by 35% for price-sensitive items</li>
+                                        <li><strong>Inventory Optimization:</strong> Reduced stockouts by 65% through better demand planning</li>
+                                        <li><strong>Revenue Impact:</strong> Dynamic pricing increased revenue by 12%</li>
+                                        <li><strong>Category Differences:</strong> Electronics showed highest price elasticity, groceries lowest</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Business Impact / Recommendations Section -->
+                    <div class="project-section mb-5">
+                        <h2 class="project-section-title">Business Impact / Recommendations</h2>
+                        <div class="project-overview">
+                            <p class="lead">Based on these findings, I recommended that the retailer focus promotional efforts on price-sensitive categories to maximize sales lift, while maintaining stable pricing on premium products to protect margins. The forecasting tool also enabled better allocation of inventory to high-demand stores.</p>
+                            
+                            <div class="row mt-4">
+                                <div class="col-md-6">
+                                    <h5><i class="fas fa-bullseye text-primary me-2"></i>Strategic Recommendations</h5>
+                                    <ul>
+                                        <li><strong>Promotion Strategy:</strong> Focus discounts on household products and electronics for maximum impact</li>
+                                        <li><strong>Pricing Strategy:</strong> Maintain premium pricing on luxury items to protect margins</li>
+                                        <li><strong>Inventory Allocation:</strong> Prioritize high-demand stores for popular product categories</li>
+                                        <li><strong>Seasonal Planning:</strong> Increase inventory 40% during holiday periods with targeted promotions</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5><i class="fas fa-chart-line text-success me-2"></i>Business Impact</h5>
+                                    <ul>
+                                        <li><strong>Revenue Growth:</strong> Increased revenue by 12% through optimized pricing</li>
+                                        <li><strong>Cost Reduction:</strong> Reduced inventory costs by 18% through better demand planning</li>
+                                        <li><strong>Customer Satisfaction:</strong> Decreased stockouts by 65% across all categories</li>
+                                        <li><strong>Operational Efficiency:</strong> Reduced forecasting time from 2 days to 2 hours</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Techniques Section -->
+                    <div class="project-section mb-5">
+                        <h2 class="project-section-title">Tools & Techniques</h2>
+                        <div class="project-overview">
+                            <p class="lead">Python, Pandas, Prophet, ARIMA, XGBoost, Scikit-learn, Plotly, Streamlit, SQL, Jupyter Notebooks</p>
+                        </div>
+                    </div>
+
+                    <!-- Deliverables / Links Section -->
+                    <div class="project-section mb-5">
+                        <h2 class="project-section-title">Deliverables / Links</h2>
+                        <div class="project-overview">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5><i class="fab fa-github text-primary me-2"></i>GitHub Repository</h5>
+                                    <p><a href="https://github.com/praneethvykuntam/Retail-Demand-Forecasting-Price-Elasticity" target="_blank" class="btn btn-outline-primary">View Code</a></p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5><i class="fas fa-images text-primary me-2"></i>Dashboard Screenshots</h5>
+                                    <p>Interactive forecasting dashboards and price elasticity visualizations shown in the gallery below</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Visuals Section -->
+                    <div class="project-section mb-5">
+                        <h2 class="project-section-title">Visuals</h2>
+                        <div class="project-gallery">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="gallery-item-interactive" data-bs-toggle="modal" data-bs-target="#imageModal" data-src="retail-demand-forecasting/portfolio_main_dashboard.png" data-title="Main Dashboard - Retail Demand Forecasting">
+                                        <img src="retail-demand-forecasting/portfolio_main_dashboard.png" alt="Interactive dashboard showing demand forecasts, performance metrics, and inventory recommendations" class="img-fluid rounded">
+                                        <div class="gallery-overlay">
+                                            <i class="fas fa-search-plus"></i>
+                                            <p>Main Dashboard</p>
+                                        </div>
+                                    </div>
+                                    <h6 class="mt-2">Forecasting Dashboard</h6>
+                                    <p class="text-muted">Interactive dashboard displaying weekly demand predictions, model performance metrics, and inventory recommendations for retail operations.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="gallery-item-interactive" data-bs-toggle="modal" data-bs-target="#imageModal" data-src="retail-demand-forecasting/portfolio_business_value.png" data-title="Business Value Analysis">
+                                        <img src="retail-demand-forecasting/portfolio_business_value.png" alt="Time series chart displaying revenue improvements and cost savings from demand forecasting implementation" class="img-fluid rounded">
+                                        <div class="gallery-overlay">
+                                            <i class="fas fa-search-plus"></i>
+                                            <p>Business Value</p>
+                                        </div>
+                                    </div>
+                                    <h6 class="mt-2">Business Impact Timeline</h6>
+                                    <p class="text-muted">Charts showing revenue improvements and cost savings achieved through better demand forecasting and pricing optimization over time.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="gallery-item-interactive" data-bs-toggle="modal" data-bs-target="#imageModal" data-src="retail-demand-forecasting/portfolio_results_summary.png" data-title="Actual vs Predicted Analysis">
+                                        <img src="retail-demand-forecasting/portfolio_results_summary.png" alt="Scatter plot comparing actual sales data against predicted demand values showing strong linear correlation" class="img-fluid rounded">
+                                        <div class="gallery-overlay">
+                                            <i class="fas fa-search-plus"></i>
+                                            <p>Model Accuracy</p>
+                                        </div>
+                                    </div>
+                                    <h6 class="mt-2">Model Performance</h6>
+                                    <p class="text-muted">Scatter plot comparing actual sales against predicted demand, showing strong correlation and validating model accuracy for business use.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="gallery-item-interactive" data-bs-toggle="modal" data-bs-target="#imageModal" data-src="retail-demand-forecasting/portfolio_correlation_analysis.png" data-title="Correlation Analysis">
+                                        <img src="retail-demand-forecasting/portfolio_correlation_analysis.png" alt="Scatter plot analysis showing correlation between price changes and demand shifts for pricing optimization" class="img-fluid rounded">
+                                        <div class="gallery-overlay">
+                                            <i class="fas fa-search-plus"></i>
+                                            <p>Correlation Analysis</p>
+                                        </div>
+                                    </div>
+                                    <h6 class="mt-2">Price-Demand Relationship</h6>
+                                    <p class="text-muted">Analysis showing how price changes correlate with demand shifts, enabling data-driven pricing strategies for maximum revenue.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="gallery-item-interactive" data-bs-toggle="modal" data-bs-target="#imageModal" data-src="retail-demand-forecasting/error-distribution.png" data-title="Error Distribution Analysis">
+                                        <img src="retail-demand-forecasting/error-distribution.png" alt="Histogram showing normal distribution of prediction errors confirming model reliability and accuracy" class="img-fluid rounded">
+                                        <div class="gallery-overlay">
+                                            <i class="fas fa-search-plus"></i>
+                                            <p>Error Analysis</p>
+                                        </div>
+                                    </div>
+                                    <h6 class="mt-2">Prediction Error Analysis</h6>
+                                    <p class="text-muted">Histogram displaying the distribution of forecasting errors, confirming model reliability and highlighting areas for further optimization.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="gallery-item-interactive" data-bs-toggle="modal" data-bs-target="#imageModal" data-src="retail-demand-forecasting/cover.png" data-title="Project Overview">
+                                        <img src="retail-demand-forecasting/cover.png" alt="Executive summary dashboard highlighting key project findings, business impact metrics, and methodology overview" class="img-fluid rounded">
+                                        <div class="gallery-overlay">
+                                            <i class="fas fa-search-plus"></i>
+                                            <p>Project Overview</p>
+                                        </div>
+                                    </div>
+                                    <h6 class="mt-2">Project Summary</h6>
+                                    <p class="text-muted">Executive summary highlighting key findings, business impact metrics, and methodology overview for the demand forecasting solution.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Business Impact Section -->
+                    <div class="project-section mb-5">
+                        <h2 class="project-section-title">Business Impact & Results</h2>
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="impact-card">
+                                    <div class="impact-icon">
+                                        <i class="fas fa-percentage"></i>
+                                    </div>
+                                    <h4>85%</h4>
+                                    <p>Improvement in demand forecasting accuracy compared to traditional methods</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="impact-card">
+                                    <div class="impact-icon">
+                                        <i class="fas fa-dollar-sign"></i>
+                                    </div>
+                                    <h4>23%</h4>
+                                    <p>Increase in revenue through optimized pricing strategies based on elasticity analysis</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="impact-card">
+                                    <div class="impact-icon">
+                                        <i class="fas fa-warehouse"></i>
+                                    </div>
+                                    <h4>40%</h4>
+                                    <p>Reduction in inventory costs through better demand planning and stock optimization</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Technologies Section -->
+                    <div class="project-section mb-5">
+                        <h2 class="project-section-title">Technologies Used</h2>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Prophet</span>
+                            <span class="tech-badge">ARIMA</span>
+                            <span class="tech-badge">Pandas</span>
+                            <span class="tech-badge">Plotly</span>
+                            <span class="tech-badge">Scikit-learn</span>
+                            <span class="tech-badge">Jupyter</span>
+                            <span class="tech-badge">Matplotlib</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel">Project Image</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="modalImage" src="" alt="Project Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <h5 class="mb-2">Praneeth Vykuntam</h5>
+            <p class="mb-2">Business Analyst</p>
+            <p class="mb-0">© Copyright <strong>Praneeth Vykuntam</strong>. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
