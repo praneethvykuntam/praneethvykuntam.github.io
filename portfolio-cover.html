@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Cover - Praneeth Vykuntam</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #2c2c2c;
+            color: white;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cover-container {
+            width: 100%;
+            max-width: 800px;
+            height: 100vh;
+            background: #2c2c2c;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .selected-works {
+            position: absolute;
+            top: 60px;
+            left: 60px;
+            font-size: 12px;
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: 0.8;
+        }
+
+        .year {
+            position: absolute;
+            top: 80px;
+            left: 60px;
+            font-size: 12px;
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: 0.8;
+        }
+
+        .portfolio-title {
+            font-size: 120px;
+            font-weight: 700;
+            letter-spacing: 8px;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+
+        .name {
+            font-size: 24px;
+            font-weight: 300;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .line {
+            width: 200px;
+            height: 1px;
+            background: white;
+            margin: 20px auto;
+        }
+
+        .contact-info {
+            position: absolute;
+            bottom: 60px;
+            left: 60px;
+            right: 60px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .contact-left, .contact-right {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .contact-label {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .contact-details {
+            opacity: 0.8;
+        }
+
+        .divider {
+            width: 1px;
+            height: 60px;
+            background: white;
+            opacity: 0.3;
+        }
+
+        @media (max-width: 768px) {
+            .portfolio-title {
+                font-size: 80px;
+                letter-spacing: 4px;
+            }
+            
+            .selected-works, .year {
+                left: 30px;
+            }
+            
+            .contact-info {
+                left: 30px;
+                right: 30px;
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .divider {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cover-container">
+        <div class="selected-works">Selected Works</div>
+        <div class="year">2021/2030</div>
+        
+        <h1 class="portfolio-title">Portfolio</h1>
+        
+        <div class="name">Praneeth Vykuntam</div>
+        <div class="line"></div>
+        
+        <div class="contact-info">
+            <div class="contact-left">
+                <div class="contact-label">A</div>
+                <div class="contact-details">
+                    Address: 123 Street Name<br>
+                    City Name, State, Country, 12345
+                </div>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <div class="contact-right">
+                <div class="contact-label">W/P</div>
+                <div class="contact-details">
+                    Web: www.example.com<br>
+                    Phone: +00 123 456 7890
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
