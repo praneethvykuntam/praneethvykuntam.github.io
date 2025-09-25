@@ -298,7 +298,7 @@ body {
 .section-title {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #2d3748;
+    color: #f7fafc;
     margin-bottom: 2rem;
     position: relative;
 }
@@ -317,13 +317,13 @@ body {
 
 /* About Section */
 #about {
-    background: #f7fafc;
+    background: linear-gradient(135deg, #2d3748 0%, #1a202c 50%, #171923 100%);
     padding: 6rem 0 !important;
 }
 
 #about p {
     font-size: 1.1rem;
-    color: #4a5568;
+    color: #a0aec0;
     margin-bottom: 1.5rem;
 }
 
@@ -332,23 +332,24 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
     padding: 1rem;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
 }
 
 /* Tools Section */
 .py-5.bg-light {
     padding: 6rem 0 !important;
-    background-color: #edf2f7 !important;
+    background: linear-gradient(135deg, #1a202c 0%, #171923 50%, #0f1419 100%) !important;
 }
 
 .skill-name {
     min-width: 120px;
     font-weight: 600;
-    color: #2d3748;
+    color: #f7fafc;
 }
 
 .progress {
@@ -389,7 +390,7 @@ body {
 .skill-percentage {
     min-width: 40px;
     font-weight: 600;
-    color: #4a5568;
+    color: #a0aec0;
     text-align: right;
 }
 
@@ -460,7 +461,7 @@ body {
 /* Highlights Section */
 .py-5:not(.bg-light):not(.bg-dark) {
     padding: 6rem 0 !important;
-    background-color: #edf2f7;
+    background: linear-gradient(135deg, #1a202c 0%, #171923 50%, #0f1419 100%);
 }
 
 /* Contact Section */
@@ -814,7 +815,7 @@ section[id] {
 
 /* Projects section background */
 #projects {
-    background-color: #f7fafc;
+    background: linear-gradient(135deg, #2d3748 0%, #1a202c 50%, #171923 100%);
 }
 
 /* Card body flex layout */
@@ -1002,7 +1003,7 @@ section[id] {
 .projects-title {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #2d3748;
+    color: #f7fafc;
     margin-bottom: 1rem;
     letter-spacing: 2px;
 }
@@ -1022,9 +1023,9 @@ section[id] {
 
 /* Project Card Styles */
 .project-card {
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
     height: 100%;
     display: flex;
@@ -1034,7 +1035,8 @@ section[id] {
     color: inherit;
     padding: 2rem;
     margin-bottom: 2rem;
-    border: 1px solid #e2e8f0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
 }
 
 .project-card:hover {
@@ -1057,8 +1059,8 @@ section[id] {
     height: 80px;
     margin: 0 0 1.5rem 0;
     font-size: 2.5rem;
-    color: #4a5568;
-    background: linear-gradient(135deg, rgba(74, 85, 104, 0.1), rgba(45, 55, 72, 0.1));
+    color: #a0aec0;
+    background: linear-gradient(135deg, rgba(160, 174, 192, 0.1), rgba(255, 255, 255, 0.1));
     border-radius: 50%;
     width: 80px;
     margin-left: auto;
@@ -1076,14 +1078,14 @@ section[id] {
 .project-title {
     font-size: 1.25rem;
     font-weight: 600;
-    color: #2d3748;
+    color: #f7fafc;
     margin-bottom: 1rem;
     text-align: center;
     line-height: 1.4;
 }
 
 .project-blurb {
-    color: #4a5568;
+    color: #a0aec0;
     line-height: 1.6;
     margin-bottom: 1.5rem;
     flex-grow: 1;
@@ -1101,7 +1103,7 @@ section[id] {
 }
 
 .project-action-link {
-    color: #4a5568;
+    color: #a0aec0;
     text-decoration: underline;
     font-weight: 500;
     font-size: 0.95rem;
@@ -1109,12 +1111,12 @@ section[id] {
 }
 
 .project-action-link:hover {
-    color: #2d3748;
+    color: #f7fafc;
     text-decoration: none;
 }
 
 .project-action-link:focus {
-    outline: 2px solid #4a5568;
+    outline: 2px solid #a0aec0;
     outline-offset: 2px;
     border-radius: 4px;
 }
