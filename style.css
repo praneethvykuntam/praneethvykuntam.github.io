@@ -34,7 +34,7 @@ body {
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 25%, #0f3460 50%, #533483 75%, #e94560 100%);
+    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -61,7 +61,7 @@ body {
 
 .shape {
     position: absolute;
-    background: linear-gradient(135deg, rgba(233, 69, 96, 0.2), rgba(83, 52, 131, 0.2));
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(99, 102, 241, 0.1));
     animation: float 8s ease-in-out infinite;
 }
 
@@ -230,7 +230,7 @@ body {
 .scroll-arrow {
     width: 40px;
     height: 40px;
-    border: 2px solid #e94560;
+    border: 2px solid #3b82f6;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -239,17 +239,17 @@ body {
     transition: all 0.3s ease;
     animation: bounce 2s infinite;
     background: rgba(255, 255, 255, 0.9);
-    color: #e94560;
-    box-shadow: 0 4px 15px rgba(233, 69, 96, 0.3);
+    color: #3b82f6;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
 }
 
 .scroll-arrow:hover {
-    border-color: #533483;
-    color: #533483;
-    background: #e94560;
+    border-color: #6366f1;
+    color: #6366f1;
+    background: #3b82f6;
     color: white;
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(233, 69, 96, 0.4);
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
 }
 
 /* Animations */
@@ -311,13 +311,13 @@ body {
     transform: translateX(-50%);
     width: 60px;
     height: 3px;
-    background: linear-gradient(90deg, #e94560, #533483);
+    background: linear-gradient(90deg, #3b82f6, #6366f1);
     border-radius: 2px;
 }
 
 /* About Section */
 #about {
-    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 25%, #16213e 50%, #0f3460 75%, #533483 100%);
+    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
     padding: 6rem 0 !important;
 }
 
@@ -343,7 +343,7 @@ body {
 /* Tools Section */
 .py-5.bg-light {
     padding: 6rem 0 !important;
-    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 25%, #16213e 50%, #0f3460 75%, #533483 100%) !important;
+    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%) !important;
 }
 
 .skill-name {
@@ -369,7 +369,7 @@ body {
 }
 
 .progress-bar {
-    background: linear-gradient(90deg, #e94560, #533483) !important;
+    background: linear-gradient(90deg, #3b82f6, #6366f1) !important;
     border-radius: 4px;
     transition: width 1.5s ease;
     height: 100%;
@@ -397,7 +397,7 @@ body {
 .skill-percentage {
     min-width: 40px;
     font-weight: 600;
-    color: #e94560;
+    color: #3b82f6;
     text-align: right;
 }
 
@@ -468,14 +468,14 @@ body {
 /* Highlights Section */
 .py-5:not(.bg-light):not(.bg-dark) {
     padding: 6rem 0 !important;
-    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 25%, #16213e 50%, #0f3460 75%, #533483 100%);
+    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
 }
 
 /* Highlights card styling */
 .py-5:not(.bg-light):not(.bg-dark) .card {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%) !important;
-    border: 1px solid #e94560 !important;
-    box-shadow: 0 8px 32px rgba(233, 69, 96, 0.3) !important;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%) !important;
+    border: 1px solid #3b82f6 !important;
+    box-shadow: 0 8px 32px rgba(59, 130, 246, 0.2) !important;
 }
 
 .py-5:not(.bg-light):not(.bg-dark) .card-body {
@@ -495,18 +495,18 @@ body {
 }
 
 .py-5:not(.bg-light):not(.bg-dark) .badge {
-    background: linear-gradient(135deg, #e94560, #533483) !important;
+    background: linear-gradient(135deg, #3b82f6, #6366f1) !important;
     color: #f7fafc !important;
-    border: 1px solid #e94560 !important;
+    border: 1px solid #3b82f6 !important;
 }
 
 .py-5:not(.bg-light):not(.bg-dark) .fa-graduation-cap {
-    color: #e94560 !important;
+    color: #3b82f6 !important;
 }
 
 /* Contact Section */
 #contact {
-    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 25%, #16213e 50%, #0f3460 75%, #533483 100%);
+    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
     padding: 6rem 0 !important;
 }
 
@@ -855,7 +855,7 @@ section[id] {
 
 /* Projects section background */
 #projects {
-    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 25%, #16213e 50%, #0f3460 75%, #533483 100%);
+    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
 }
 
 /* Card body flex layout */
@@ -1051,7 +1051,7 @@ section[id] {
 .projects-divider {
     width: 60px;
     height: 3px;
-    background: linear-gradient(90deg, #e94560, #533483);
+    background: linear-gradient(90deg, #3b82f6, #6366f1);
     margin: 0 auto;
     border-radius: 2px;
 }
@@ -1099,8 +1099,8 @@ section[id] {
     height: 80px;
     margin: 0 0 1.5rem 0;
     font-size: 2.5rem;
-    color: #e94560;
-    background: linear-gradient(135deg, rgba(233, 69, 96, 0.2), rgba(83, 52, 131, 0.2));
+    color: #3b82f6;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(99, 102, 241, 0.2));
     border-radius: 50%;
     width: 80px;
     margin-left: auto;
@@ -1143,7 +1143,7 @@ section[id] {
 }
 
 .project-action-link {
-    color: #e94560;
+    color: #3b82f6;
     text-decoration: underline;
     font-weight: 500;
     font-size: 0.95rem;
@@ -1151,12 +1151,12 @@ section[id] {
 }
 
 .project-action-link:hover {
-    color: #533483;
+    color: #6366f1;
     text-decoration: none;
 }
 
 .project-action-link:focus {
-    outline: 2px solid #e94560;
+    outline: 2px solid #3b82f6;
     outline-offset: 2px;
     border-radius: 4px;
 }
